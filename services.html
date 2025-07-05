@@ -2,103 +2,190 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mes Services - Hadodile</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
-  <style>
-    /* Police personnalisée pour titres et paragraphes */
-    body {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 400;
-      line-height: 1.6;
-      color: var(--text-color);
-      background-color: var(--bg-color);
-    }
-    h2.heading {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 700;
-      font-size: 3.6rem;
-      margin-bottom: 3rem;
-    }
-    .service-box h3 {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
-    }
-    .service-box p {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 300;
-      font-size: 1.6rem;
-      white-space: pre-line; /* permet de respecter les sauts de ligne dans le texte */
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hadodile Portfolio</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="header">
-    <a href="index.html" class="logo">Hadodile</a>
+    <a href="#" class="logo">Hadodile</a>
+    <i class="bx bx-menu" id="menu-icon"></i>
     <nav class="navbar">
-      <a href="index.html">Accueil</a>
-      <a href="about.html">À propos</a>
-      <a href="services.html" class="active">Services</a>
+      <a href="#home" class="active">Accueil</a>
+      <a href="#about">À propos</a>
+      <a href="#competences">Mes compétences</a>
+      <a href="#projets">Mes projets</a>
+      <a href="#service">Offres de services</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- Service Digital -->
-  <section class="service" id="services">
-    <h2 class="heading">Offre <span>Stratégie Digitale</span></h2>
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Salut, c'est moi</h3>
+      <h1>Hadodile GOKOU</h1>
+      <h3>Et je suis un <span class="typed-text"></span><span class="cursor">|</span></h3>
+      <p>Passionné par la technologie, le marketing digital et l'innovation.</p>
+      <div class="social-media">
+        <a href="#"><i class="bx bxl-facebook"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+        <a href="#"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <a href="cv/CV Hadodile GOKOU.pdf" class="btn" download>Télécharger CV</a>
+    </div>
+    <div class="home-img">
+      <img src="images/1gk.jpg" width="300" height="400" alt="Photo Hadodile Gokou" />
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="images/2gk.jpg" width="300" height="400" alt="Photo à propos" />
+    </div>
+    <div class="about-content">
+      <h2 class="heading">À mon <span>sujet</span></h2>
+      <h3>Social Media Manager</h3>
+      <p>Ma mission est d’aider les entreprises à maîtriser les meilleures stratégies marketing et de communication digitale pour bâtir des marques solides, durables et à fort impact.</p>
+      <a href="about.html" class="btn">En savoir plus</a>
+    </div>
+  </section>
+
+  <section class="service" id="service">
+    <h2 class="heading">Mes <span>Services</span></h2>
     <div class="service-container">
       <div class="service-box">
         <i class="bx bx-code-alt"></i>
         <h3>Votre stratégie digitale en 7 jours</h3>
-        <p>
-          Ce que vous obtenez :<br>
-          • Audit & Diagnostic complet<br>
-          • Stratégie Digitale sur mesure<br>
-          • Plan de contenu stratégique<br>
-          • Introduction à la publicité Facebook Ads<br><br>
-          Bonus :<br>
-          ACCÈS AUX RESSOURCES : Vision & Marketing et Le CopyGoat<br><br>
-          → J'accompagne les entreprises et freelances dans la mise en place d’une stratégie de communication digitale efficace.
-        </p>
+        <p>J’accompagne les entreprises et freelances dans la mise en place d’une stratégie de communication digitale efficace.</p>
+        <a href="services.html" class="btn">En savoir plus</a>
+      </div>
+      <div class="service-box">
+        <i class="bx bxs-paint"></i>
+        <h3>Votre maison solaire en 7 étapes</h3>
+        <p>J’aide les familles à réduire leurs factures d’électricité tout en respectant l’environnement, avec des installations solaires sur mesure.</p>
+        <a href="services.html" class="btn">En savoir plus</a>
       </div>
     </div>
   </section>
 
-  <!-- Service Solaire -->
-  <section class="service" id="services-techniques">
-    <h2 class="heading">Offre <span>Solaire</span></h2>
-    <div class="service-container">
-      <div class="service-box">
-        <i class="bx bxs-sun"></i>
-        <h3>Votre maison solaire en 7 étapes</h3>
-        <p>
-          Ce que vous obtenez :<br>
-          • Audit énergétique gratuit<br>
-          • Dimensionnement précis<br>
-          • Étude de rentabilité<br>
-          • Installation clé en main<br>
-          • Formation express à l’utilisation<br>
-          • 3 mois d’entretien offert<br>
-          • Support prioritaire<br><br>
-          → J’aide les familles à réduire leurs factures d’électricité tout en respectant l’environnement, avec des installations solaires sur mesure.
-        </p>
+  <section class="services" id="competences">
+    <h2 class="heading">Mes <span>Compétences Digitales</span></h2>
+    <div class="services-container">
+      <div class="services-box">
+        <i class="bx bx-code-alt"></i>
+        <h3>Audit stratégique des pages & communication</h3>
+      </div>
+      <div class="services-box">
+        <i class="bx bxs-paint"></i>
+        <h3>Création de contenus engageants</h3>
+      </div>
+      <div class="services-box">
+        <i class="bx bx-pencil"></i>
+        <h3>Gestion de réseaux sociaux</h3>
+      </div>
+      <div class="services-box">
+        <i class="bx bx-book-open"></i>
+        <h3>Reporting, analyse & optimisation</h3>
+      </div>
+      <div class="services-box">
+        <i class="bx bx-euro"></i>
+        <h3>Mise en place de stratégies marketing performantes</h3>
       </div>
     </div>
-    <div style="text-align: center; margin-top: 2rem;">
-      <a href="index.html" class="btn">Retour à l'accueil</a>
+  </section>
+
+  <section class="services" id="competences-tech">
+    <h2 class="heading">Mes <span>Compétences Techniques</span></h2>
+    <div class="services-container">
+      <div class="services-box">
+        <i class="bx bx-code-alt"></i>
+        <h3>Dimensionnement de systèmes solaires</h3>
+      </div>
+      <div class="services-box">
+        <i class="bx bxs-paint"></i>
+        <h3>Installation solaire clé en main</h3>
+      </div>
+      <div class="services-box">
+        <i class="bx bx-pencil"></i>
+        <h3>Dépannage et entretien</h3>
+      </div>
     </div>
   </section>
+
+  <section class="projets" id="projets">
+    <h2 class="heading">Mes <span>Projets Digitaux et Collaborations</span></h2>
+    <div class="projets-container">
+      <!-- exemples de projets -->
+      <div class="projets-box">
+        <img src="images/godwin.jpg" width="350" height="350" alt="Godwin Soola" />
+        <div class="projets-layer">
+          <h4>Godwin Soola</h4>
+        </div>
+      </div>
+      <div class="projets-box">
+        <img src="images/api.jpg" width="350" height="350" alt="APL Babies" />
+        <div class="projets-layer">
+          <h4>APL Babies</h4>
+        </div>
+      </div>
+      <!-- etc -->
+    </div>
+  </section>
+
+  <section class="projets" id="projets-tech">
+    <h2 class="heading">Mes <span>Projets Techniques et Réalisations</span></h2>
+    <div class="projets-container">
+      <div class="projets-box">
+        <img src="images/dimensio.jpg" width="350" height="350" alt="Dimensionnement" />
+        <div class="projets-layer">
+          <h4>Dimensionnement <br />Mise en place d'un système solaire domestique</h4>
+        </div>
+      </div>
+      <div class="projets-box">
+        <img src="images/feu.jpg" width="350" height="350" alt="Feux tricolores" />
+        <div class="projets-layer">
+          <h4>Conception d'un système automatisé de feux tricolores sur un carrefour en Y</h4>
+        </div>
+      </div>
+      <!-- etc -->
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="heading">Contactez-<span>Moi!</span></h2>
+    <form action="https://formspree.io/f/movwzdpp"
+  method="POST" >
+      <div class="input-box">
+        <input type="text" name="name" placeholder="Nom et Prénom" required />
+        <input type="email" name="email" placeholder="Adresse Email" required />
+      </div>
+      <div class="input-box">
+        <input type="tel" name="phone" placeholder="Numéro de téléphone" />
+        <input type="text" name="subject" placeholder="Sujet du mail" required />
+      </div>
+      <textarea name="message" cols="30" rows="10" placeholder="Entrez votre message" required></textarea>
+      <input type="submit" value="Envoyer" class="btn" />
+    </form>
+  </section>
+
   <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2025 
-                Page réalisée par <a href="https://www.facebook.com/gill.christ.badji.2025/">BADJI Marilin</a>
-            </p>
-        </div>
-        <div class="footer-iconTop">
-            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-        </div>
-     </footer>
+    <div class="footer-text">
+      <p>
+        Copyright &copy; 2025 Page réalisée par
+        <a href="https://www.facebook.com/gill.christ.badji.2025/" style="color:#0ef; text-decoration: underline;">BADJI Marilin</a>
+      </p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
