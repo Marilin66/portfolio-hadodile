@@ -45,7 +45,7 @@ const typed = new Typed('.typed-text', {
     strings: [
         'Social Media Manager',
 
-        'Ingénieur Génie Électrique (en formation)',
+        'Ingénieur en Génie Électrique (en formation)'
 
         'Tech et AI Enthusiast',
        
