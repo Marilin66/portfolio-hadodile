@@ -1,12 +1,11 @@
-
-
 // ========== ACTIVE LINK ON SCROLL ==========
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
+    let top = window.scrollY;
+
     sections.forEach(sec => {
-        let top = window.scrollY;
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
@@ -19,13 +18,15 @@ window.onscroll = () => {
         }
     });
 
-    // Sticky navbar
     let header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 100);
 
-    // Fermer le menu sur scroll
-    menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active');
+    const menuIcon = document.querySelector('#menu-icon');
+    const navbar = document.querySelector('.navbar');
+    if (menuIcon && navbar) {
+        menuIcon.classList.remove('bx-x');
+        navbar.classList.remove('active');
+    }
 };
 
 // ========== SCROLL REVEAL ==========
@@ -41,26 +42,24 @@ ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 // ========== TYPED TEXT ==========
-const typed = new Typed('.typed-text', {
-    strings: [
-        'Social Media Manager',
-
-        'Ingénieur en Génie Électrique (en formation)',
-
-        'Tech et AI Enthusiast',
-       
-    ],
-    typeSpeed: 100,
-    backSpeed: 50,
-    backDelay: 2000,
-    loop: true
-});
 document.addEventListener("DOMContentLoaded", () => {
+    const typed = new Typed('.typed-text', {
+        strings: [
+            'Social Media Manager',
+            'Ingénieur en Génie Électrique (en formation)',
+            'Tech et AI Enthusiast'
+        ],
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 2000,
+        loop: true
+    });
+
     const menuIcon = document.querySelector('#menu-icon');
     const navbar = document.querySelector('.navbar');
 
     menuIcon.addEventListener('click', () => {
-        menuIcon.classList.toggle('bx-x'); // pour l’animation
+        menuIcon.classList.toggle('bx-x');
         navbar.classList.toggle('active');
     });
 });
