@@ -55,7 +55,7 @@ const typed = new Typed('.typed-text', {
   strings: [
     'Social Media Manager',
     'Ingénieur en Génie Électrique (en formation)',
-    'Tech et AI Enthusiast',
+    'Amoureux de la Tech et de l'IA. Futur innovateur dans ces domaines',
   ],
   typeSpeed: 100,
   backSpeed: 50,
